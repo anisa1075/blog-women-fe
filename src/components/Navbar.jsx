@@ -19,18 +19,25 @@ const Navbar = () => {
                         </Box>
                         <Box>
                             <Flex gap={5}>
-                                <i className="fa-brands fa-square-instagram 2xl"></i>
-                                <i className="fa-brands fa-tiktok"></i>
-                                <i className="fa-brands fa-twitter"></i>
+
+                                <i className="fa-brands fa-square-instagram 2xl bg-purple" ></i>
+                                <Box bg={"#e7d2e5"} color={"white"} py={1} px={2} borderRadius={"full"}>
+                                    <i className="fa-brands fa-tiktok"></i>
+                                </Box>
+                                <Box bg={"#e7d2e5"} color={"white"} py={1} px={2} borderRadius={"full"}>
+                                    <i className="fa-brands fa-twitter"></i>
+                                </Box>
+
+
                             </Flex>
                         </Box>
                     </Flex>
                 </Box>
 
                 {/* Menu Item */}
-                <Box bg={"#d5bcdc"} color={"white"} p={2.50} fontFamily="Outfit, sans-serif" fontSize={"sm"} fontWeight={600} letterSpacing={"1px"}  >
+                <Box position={"sticky"} top={0} w={"full"} zIndex={10} bg={"#d5bcdc"} color={"white"} p={2.50} fontFamily="Outfit, sans-serif" fontSize={"sm"} fontWeight={600} letterSpacing={"1px"}  >
                     <Flex justifyContent={"center"} gap={20}>
-                        
+
                         <Link as={RouterLink} to="/" _hover={{ textDecoration: "none" }}>HOME</Link>
                         <Link as={RouterLink} to="/about" _hover={{ textDecoration: "none" }}>ABOUT</Link>
                         <Link as={RouterLink} to="/" _hover={{ textDecoration: "none" }}>ALL BLOG</Link>
